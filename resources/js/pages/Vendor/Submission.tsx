@@ -1,16 +1,12 @@
-import VendorForm from '@/components/vendor/vendor-form'
-import Layout from '@/layouts/layout'
-import React from 'react'
+import VendorForm from '@/components/vendor/vendor-form';
+import DashboardLayout from '@/layouts/dashboard-layout';
 
 function Submission() {
-  return (
-    <Layout>
-        <div className='max-w-3xl mx-auto'>
-        <VendorForm/>
-        </div>
-    </Layout>
-  
-  )
+    return (
+        <DashboardLayout title="Vendor Submission">
+            <VendorForm />
+        </DashboardLayout>
+    );
 }
 
-export default Submission
+export default Submission;
